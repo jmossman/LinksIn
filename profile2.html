@@ -2,23 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Profile 2</title>
+  <title>Profile 2 – John Doe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-<script src="auth.js"></script>
+  <script src="auth.js"></script>
+  <script src="theme.js"></script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <div class="profile">
-    <img src="images/person2.jpg" alt="Profile Picture">
-    <h1>John Doe</h1>
-    <div class="info-item">📍 Manchester, UK</div>
-    <div class="info-item">🏢 Zenith Ltd</div>
-    <div class="info-item">💼 Product Manager</div>
-    
-    <h2>Sports – Golf</h2>
-    <div class="info-item blurred">⛳ Club Membership: [Hidden]</div>
-    <div class="info-item blurred">📊 Handicap: [Hidden]</div>
+<div class="profile">
+  <img src="images/person2.jpeg" alt="Profile Picture">
+  <h1>John Doe</h1>
+  <div class="info-item">📍 Manchester, UK</div>
+  <div class="info-item">🏢 Zenith Ltd</div>
+  <div class="info-item">💼 Product Manager</div>
 
-    <button>Send Message</button>
-  </div>
+  <h2>Sports – Golf</h2>
+  <div class="info-item blurred">⛳ Club Membership: [Hidden]</div>
+  <div class="info-item blurred">📊 Handicap: [Hidden]</div>
+
+  <button class="button">Send Message</button>
+  <button onclick="toggleTheme()" class="button">Toggle Light/Dark Mode</button>
+</div>
+<button onclick="logout()" class="button">Logout</button>
+<footer style="text-align:center; margin-top: 2rem; color: var(--text); font-size: 0.9rem;">
+  🔒 Protected by <strong>Momentum Assured</strong>
+</footer>
 </body>
 </html>
